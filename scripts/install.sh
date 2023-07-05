@@ -695,12 +695,12 @@ echo "Installing Dependencies ..."
   exit -1
 }
 
-if [ -d "/home/pi/OctoPrint/venv" ]; then
-    DIRECTORY="/home/pi/OctoPrint/venv"
-elif [ -d "/home/pi/oprint" ]; then
-    DIRECTORY="/home/pi/oprint"
+if [ -d "/home/reb/OctoPrint/venv" ]; then
+    DIRECTORY="/home/reb/OctoPrint/venv"
+elif [ -d "/home/reb/oprint" ]; then
+    DIRECTORY="/home/reb/oprint"
 else
-    echo "Neither /home/pi/OctoPrint/venv nor /home/pi/oprint can be found."
+    echo "Neither /home/reb/OctoPrint/venv nor /home/reb/oprint can be found."
     echo "If your OctoPrint instance is running on a different machine just type - in the following prompt."
     text_input "Please specify OctoPrints full virtualenv path manually (no trailing slash)." DIRECTORY
 fi;
